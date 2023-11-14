@@ -1,0 +1,54 @@
+/* 
+ctrl + / starts a comment 
+*/
+/* 
+list of css selectors:
+            -element selector: is going to select all instances of the given tag from our html page
+                -p
+                -body
+*/
+
+
+p, h1 {
+/*  select all p tags */
+/* use comma, to have this style effect multiple tags */
+/* property: value; */
+color:blue;
+background-color:blueviolet;
+}
+
+body {
+    background-color: rgb(237, 239, 241);
+    /* in css there are three major ways to refer to color:
+            - color name
+            - rgb value 0~255 for each 
+            - can use #000000 for color values*/
+}
+
+
+.header {
+color: yellowgreen;
+background-color: skyblue;
+}
+
+#unique {
+/* id are accessed with the '#' symbole and the name of that it in this case 'unique'*/
+text-decoration: under;
+background-color: steelblue;
+color: lightblue;
+border-radius: 25px;}
+
+.btn{
+text-decoration: none;
+border: 2px solid red;
+background-color: bisque;
+border-radius: 5px;
+
+}
+
+nav .btn {
+text-shadow: 1px 1px 5px black;
+}
+nav > .btn {
+    background-color: aquamarine;
+}
