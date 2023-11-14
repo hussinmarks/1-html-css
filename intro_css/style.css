@@ -52,3 +52,54 @@ text-shadow: 1px 1px 5px black;
 nav > .btn {
     background-color: aquamarine;
 }
+
+
+/* 
+   ! css hierarchy
+     this allows css to use a priority list
+    external style sheet:
+       -element 
+       -class
+       -id
+    internal style sheet: 
+       -element
+       -class
+       -id
+       -inline-styling
+       -!important
+       
+    external vs internal style sheets 
+    -external is a css file on its own page
+    -internal is css commands in the html page
+    
+    roder of spacificity:
+        1. !important
+        2. inline style
+        3. id selector
+        4. class
+        5. element
+*/
+
+.oos-class {
+background-color: chocolate;
+}
+ h3 {
+background-color: aliceblue;
+}
+
+#oos-id {
+    background-color: gray;
+}
+a:visited {
+    color: red;
+}
+a:hover {
+    color: pink;
+}
+a:active {
+    color: greenyellow;
+}
+a:link{
+    color: purple;
+    font-size: 1em;
+}
