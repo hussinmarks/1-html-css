@@ -1,7 +1,14 @@
-.child {padding: 25px;}
+.parent-container {
+        background-color: beige;
+        margin: 1em;
+        border: 2px solid black;
+        width: 100vw;}
+        
+        .child {padding: 25px;}
 
 .child1 {border: 2px solid gold;
 background-color: gold;
+
 }
 
 .child2 {border: 2px solid red;
