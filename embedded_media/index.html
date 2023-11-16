@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>embedded media</title>
+  </head>
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: beige;
+    }
+  </style>
+  <body>
+    <!-- purpose: 
+               -videos can provide useful information
+               - images can help make your site more enjoyable -->
+
+    <!-- image -->
+    <img
+      src="https://imgs.search.brave.com/CvCz_h9vCKmD2oJ6HfxOPXclrQSLiS_7t-caNAfkAc8/rs:fit:1200:1000:1/g:ce/aHR0cDovL3d3dy5l/bWFnaWRsYS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMTMv/MTAvaHRtbDUucG5n"
+      alt="imagehtml5"
+      style="height: 200px; width: 300px"
+    />
+
+    <!-- common files
+             - jpg/jpeg
+
+             -png
+
+             -svg 
+
+     -->
+    <br />
+
+    <!-- iframe -->
+    <iframe
+      src="https://www.december.com/html/spec/HTML5-Cheat-Sheet.pdf"
+      title="HTML5-Cheat-Sheet"
+      frameborder="0"
+      height="500"
+      width="800"
+      style="border-radius: 20px"
+    >
+    </iframe>
+    <!-- an thake longer to load, used to embed docs, use attributw-->
+    <video height="400" width="400" controls>
+      <source src="#mp4" type="video/mp4" />
+      <source src="#ogg" type="video/ogg" />
+      <source src="#mov" type="video/mov" />
+    </video>
+    <br />
+    <audio autoplay="false" muted="true" controls>
+      <source src="#audio.mp3" type="audio.mp3" />
+      <source src="#audio.ogg" type="audio.ogg" />
+      <p>error message here: unsupported files</p>
+    </audio>
+
+    <!-- maps -->
+    <iframe
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-73.2130900,44.4749000,-73.2102500,44.4772200&layer=mapnik"
+      frameborder="0"
+      title="upright"
+      width="400"
+      height="300"
+    ></iframe>
+  </body>
+</html>
