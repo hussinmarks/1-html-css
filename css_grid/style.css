@@ -1,49 +1,49 @@
 H3 {
-    border: 1PX solid purple;
-background-color: crimson;
-padding: 0.3em;
-margin: 0;
+  border: 1px solid purple;
+  background-color: crimson;
+  padding: 1px;
+  margin: 1px;
 }
 
-.grid_basics { 
-/* a grid will be in rows */
-/* ?spans across the whole container */
-display: grid;
-inline-size: 150px;
+.grid_basics {
+  /* a grid will be in rows */
+  /* ?spans across the whole container */
+  display: grid;
+  inline-size: 150px;
 }
 
 .grid_explicit {
-display: grid;
-/* grid-template-rows: 150px 120px; */
-/* grid-template-columns: 90px 90px 90px; */
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr 1fr;
+  display: grid;
+  /* grid-template-rows: 150px 120px; */
+  /* grid-template-columns: 90px 90px 90px; */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 
-gap: 1em;
+  gap: 1em;
 }
 .grid_template {
-    display: grid;
-    width: 100%;
-    grid-template-areas: 
+  display: grid;
+  width: 100%;
+  grid-template-areas:
     "head head"
     "nav main"
     "footer main";
-    grid-template-rows:  50px 20em 3em;
-    grid-template-columns: .5fr 4fr;
+  grid-template-rows: 50px 20em 3em;
+  grid-template-columns: 0.5fr 4fr;
 }
 header {
-    background-color: green;
-    grid-area: head;
+  background-color: green;
+  grid-area: head;
 }
 nav {
-    background-color: aquamarine;
-    grid-area: nav;
+  background-color: aquamarine;
+  grid-area: nav;
 }
 main {
-    background-color: black;
-    grid-area: main;
+  background-color: black;
+  grid-area: main;
 }
 footer {
-    background-color: blue;
-    grid-area: footer;
+  background-color: blue;
+  grid-area: footer;
 }
